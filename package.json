@@ -1,0 +1,67 @@
+{
+  "name": "v-regions",
+  "description": "2021最新省市区县三级联动(数据源：腾讯位置服务（行政区划）API) 基于Vue2.x、ElementUI2.x",
+  "author": "杜康",
+  "version": "1.0.0",
+  "private": false,
+  "main": "packages/index.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name v-regions --dest lib packages/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dukanglyb/v-regions.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "javascript",
+    "elementui",
+    "regions",
+    "v-regions"
+  ],
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.3",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/airbnb"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
