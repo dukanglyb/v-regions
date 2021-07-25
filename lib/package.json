@@ -1,0 +1,20 @@
+{
+  "name": "v-regions",
+  "author": "杜康",
+  "description": "2021最新省市区县三级联动(数据源：腾讯位置服务（行政区划）API) 基于Vue2.x、ElementUI2.x",
+  "version": "1.0.1",
+  "private": false,
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dukanglyb/v-regions.git"
+  },
+  "keywords": [
+    "vue",
+    "javascript",
+    "elementui",
+    "regions",
+    "v-regions"
+  ],
+  "license": "MIT"
+}
