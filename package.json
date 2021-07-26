@@ -2,12 +2,12 @@
   "name": "v-regions",
   "description": "2021最新省市区县三级联动(数据源：腾讯位置服务（行政区划）API) 基于Vue2.x、ElementUI2.x",
   "author": "杜康",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "main": "packages/index.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --dest dist",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name v-regions --dest lib packages/index.js"
   },
@@ -15,6 +15,7 @@
     "type": "git",
     "url": "https://github.com/dukanglyb/v-regions.git"
   },
+  "homepage": "https://dukanglyb.github.io/v-regions/dist/index.html",
   "license": "MIT",
   "keywords": [
     "vue",

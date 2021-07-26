@@ -4,6 +4,7 @@ function resolve(dir) {
   return path.resolve(__dirname, dir);
 }
 module.exports = {
+  publicPath: "/v-regions/",
   pages: {
     index: {
       title: '2021最新省市区县级联动',

@@ -3,6 +3,10 @@
 ## 最近更新（2021年6月19日）
 数据源已更新为[腾讯位置服务（行政区划）API](https://lbs.qq.com/service/webService/webServiceGuide/webServiceDistrict)，增加了香港、澳门、台湾相关数据~
 
+## 案例和文档（Examples and Documentation）
+
+[v-regions案例和文档](https://dukanglyb.github.io/v-regions/dist/index.html)
+
 ## 安装
 未安装ElementUI
 ```
@@ -61,7 +65,7 @@ Vue.use(VeCascader);
 |ve-province-city| Boolean |is-all|true/false|false|
 |ve-province-city-area| Boolean |is-all|true/false|false|
 
-全部可自定义
+可自定义"全部"
 | 组件 | 参数 | 类型 | 可选值 | 默认值 |
 |:--- | :---: | :---: | :---: | :---: |
 |ve-province| String |all-text|--|全部|
@@ -127,10 +131,7 @@ export default {
 export default {
   data () {
     return {
-      cregion: {
-        codes: [],
-        names: []
-      },
+      cregion: {},
     }
   }
 }
