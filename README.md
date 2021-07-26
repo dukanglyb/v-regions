@@ -5,7 +5,7 @@
 
 ## 案例和文档（Examples and Documentation）
 
-[v-regions案例和文档](https://dukanglyb.github.io/v-regions/dist/index.html)
+[v-regions案例和文档](https://dukanglyb.github.io/v-regions/docs)
 
 ## 安装
 未安装ElementUI
