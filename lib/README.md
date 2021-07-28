@@ -78,6 +78,8 @@ Vue.use(VeCascader);
 |ve-province| String |size|medium/small/mini|--|
 |ve-province-city| String |size|medium/small/mini|--|
 |ve-province-city-area| String |size|medium/small/mini|--|
+
+
 ```
 <template>
   <div id="app">
@@ -86,6 +88,8 @@ Vue.use(VeCascader);
     <ve-province-city v-model="provinceCity"></ve-province-city>
     <br />
     <ve-province-city-area v-model="sregion"></ve-province-city-area>
+    <br />
+    <ve-cascader v-model="cregion"></ve-cascader>
     <br />
   </div>
 </template>
@@ -97,40 +101,6 @@ export default {
       province: {},
       provinceCity: {},
       sregion: {},
-    }
-  }
-}
-</script>
-```
-
->级联省市区县三级联动
-
-组件支持属性
-
-禁用
-| 组件 | 参数 | 类型 | 可选值 | 默认值 |
-|:--- | :---: | :---: | :---: | :---: |
-|ve-province| Boolean |disabled|true/false|false|
-|ve-province-city| Boolean |disabled|true/false|false|
-|ve-province-city-area| Boolean |disabled|true/false|false|
-
-尺寸
-| 组件 | 参数 | 类型 | 可选值 | 默认值 |
-|:--- | :---: | :---: | :---: | :---: |
-|ve-province| String |size|medium/small/mini|--|
-|ve-province-city| String |size|medium/small/mini|--|
-|ve-province-city-area| String |size|medium/small/mini|--|
-```
-<template>
-  <div id="app">
-    <ve-cascader v-model="cregion"></ve-cascader>
-  </div>
-</template>
-
-<script>
-export default {
-  data () {
-    return {
       cregion: {},
     }
   }

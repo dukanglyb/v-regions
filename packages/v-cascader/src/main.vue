@@ -1,9 +1,10 @@
 <template>
-  <el-cascader ref="refCascader" :disabled="disabled" :options="regionOptions" :props="config" v-model="regionCodes"
+  <el-cascader ref="refCascader" :disabled="disabled" :options="options" :props="config" v-model="regionCodes"
     @change="handleChange" clearable></el-cascader>
 </template>
 <script>
 const cn_regions = require(`static/json/region.json`);
+import { limitedRegion } from "static/utils";
 export default {
   name: 'VeCascader',
 
@@ -27,6 +28,14 @@ export default {
       type: Boolean,
       default: false
     },
+    allText: {
+      type: String,
+      default: "全部"
+    },
+    isAll: {
+      type: Boolean,
+      default: false,
+    },
   },
 
   data () {
@@ -35,12 +44,19 @@ export default {
         label: "name",
         value: "code"
       },
-      regionOptions: cn_regions,
+      allObj: {
+        name: this.allText,
+        code: ""
+      },
       regionCodes: this.region.codes
     }
   },
-
-  computed: {},
+  created() {},
+  computed: {
+    options () {
+      return this.isAll ? limitedRegion(cn_regions, this.allObj) : cn_regions;
+    }
+  },
   watch: {},
   methods: {
     handleChange (codes) {
