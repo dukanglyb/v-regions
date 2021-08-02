@@ -77,7 +77,7 @@
               <ve-province-city-area v-model="sregion"></ve-province-city-area>
             </el-form-item>
             <el-form-item label="绑定值">
-              <el-input type="textarea" rows=4 disabled :value="JSON.stringify({ 
+              <el-input type="textarea" rows=5 disabled :value="JSON.stringify({ 
                 provinceCode: sregion.provinceCode, 
                 cityCode: sregion.cityCode,
                 areaCode: sregion.areaCode
@@ -93,7 +93,7 @@
               <ve-province-city-area v-model="allSregion" :is-all="true"></ve-province-city-area>
             </el-form-item>
             <el-form-item label="绑定值">
-              <el-input type="textarea" rows=4 disabled :value="JSON.stringify({ 
+              <el-input type="textarea" rows=5 disabled :value="JSON.stringify({ 
                 provinceCode: allSregion.provinceCode, 
                 cityCode: allSregion.cityCode,
                 areaCode: allSregion.areaCode
@@ -162,7 +162,7 @@ export default {
   }
 }
 .region {
-  width: 776px;
+  width: 790px;
   textarea {
     resize: none;
   }
